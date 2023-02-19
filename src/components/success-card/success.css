@@ -1,0 +1,10 @@
+.successCard {
+  position: relative;
+}
+.successIcon {
+  position: absolute;
+  top: -12%;
+  left: 40%;
+  /* background-color: white;
+  border-radius: 50%; */
+}

@@ -1,23 +1,53 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Login from "./components/login";
-import Navbar from "./components/navbar";
-import Register from "./components/register";
-import Home from "./components/home";
-import Main from "./components/main";
-import { Footer } from "./components";
+import { Footer, Navbar, SuccessCard } from "./components";
+import {
+  Apply,
+  Calculator,
+  Home,
+  LoanPage,
+  Login,
+  Main,
+  Page404,
+  Register,
+} from "./pages";
 
 function App() {
   return (
     <div className="App ">
       <Navbar />
-      <div className="min-vh-100">
+      <div className="">
         <Routes>
-          {/* dummy */}
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/main" element={<Main />} />
+          <Route
+            path="/login"
+            element={<ProtectedRoute component={<Main />} />}
+          />
+          <Route
+            path="/register"
+            element={
+              <ProtectedRoute component={<Main />} navigate={<Register />} />
+            }
+          />
+          <Route
+            path="/"
+            element={
+              <ProtectedRoute component={<Main />} navigate={<Home />} />
+            }
+          />
+          <Route path="/calculator" element={<Calculator />} />
+          <Route
+            path="/loan"
+            element={<ProtectedRoute component={<LoanPage />} />}
+          />
+          <Route
+            path="/apply"
+            element={<ProtectedRoute component={<Apply />} />}
+          />
+          <Route
+            path="/success"
+            element={<ProtectedRoute component={<SuccessCard />} />}
+          />
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </div>
       <Footer />
@@ -25,4 +55,7 @@ function App() {
   );
 }
 
+const ProtectedRoute = ({ component, navigate = <Login /> }) => {
+  return localStorage.getItem("id") ? component : navigate;
+};
 export default App;

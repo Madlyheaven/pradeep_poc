@@ -1,19 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Image from "../../Images/edloan1.png";
+import "../../Images/edloan1.png";
 
 export default function Home() {
   return (
     <>
       <div className="my-0 py-0">
-        <div className="container-fluid px-0  my-0 pt-0 pb-0">
-          <div className="row align-content-center">
-            <div className="col-12 text-end">
+        <div className="container-fluid px-0 my-0 pt-0 pb-0">
+          <div className="row align-content-center mx-0 px-0">
+            <div className="col-12 text-end mx-0 px-0">
               {/* <div
                 className="display-1 fw-bold header-title text-white"
                 style={{ letterSpacing: "10px" }}
               > */}
-              <img src={Image} style={{ width: "100%", marginTop: "0%" }} />
+              <img src={Image} className="homeImage" alt="home" />
               {/* <h1 className="display-4 fw-bold justify-content-center">
                   UNLOCK
                 </h1>
