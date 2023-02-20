@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Image from "../../Images/edloan1.png";
-import "../../Images/edloan1.png";
+import Image from "../../Images/homepic1.png";
+import "../../Images/homepic1.png";
 
 export default function Home() {
   return (
@@ -9,34 +9,23 @@ export default function Home() {
       <div className="my-0 py-0">
         <div className="container-fluid px-0 my-0 pt-0 pb-0">
           <div className="row align-content-center mx-0 px-0">
-            <div className="col-12 text-end mx-0 px-0">
-              {/* <div
-                className="display-1 fw-bold header-title text-white"
-                style={{ letterSpacing: "10px" }}
-              > */}
-              <img src={Image} className="homeImage" alt="home" />
-              {/* <h1 className="display-4 fw-bold justify-content-center">
-                  UNLOCK
-                </h1>
-                <span>THE TRUE VALUE OF</span>
-                <span className="d-block text-info">YOUR GOLD</span> */}
-              {/* </div> */}
-              {/* <p className="col-6 ms-auto text-black header-title">
-                One of the largest private banks in India, YAS has a sizable
-                branch network. Customers may obtain loans from YAS with a
-                maximum 36-month payback period. Farmers in rural regions can
-                also take advantage of YAS's Gold Loan programme. The largest
-                loan accessible through this site is Rs. 50 lakh, with interest
-                rates starting at 7.50 percent.
-              </p> */}
-              {/* {!localStorage.getItem("id") && (
-                <Link
-                  to="register"
-                  className="btn btn-outline-info btn-lg px-5 my-5 text-uppercase"
+            <div className="col-12 text-end mx-0 px-0 homeContainer">
+              {/* <img src={Image} className="" alt="home" /> */}
+              <h2 className="min-vh-100 d-flex flex-column justify-content-center col-6 text-light">
+                <h1
+                  className="d-inline-block display-4 fw-bold text-uppercase"
+                  // style={{ textAlign: "justify" }}
                 >
-                  Register
-                 </Link> 
-               )} */}
+                  Believe it or not! Your Education Loan is few clicks away
+                </h1>
+                <span
+                  className="d-inline-blocks"
+                  // style={{ textAlign: "justify" }}
+                >
+                  Unlimited tax benefit on the interest paid, Loan upto 1 crore,
+                  Get an Education loan now.
+                </span>
+              </h2>
             </div>
           </div>
         </div>

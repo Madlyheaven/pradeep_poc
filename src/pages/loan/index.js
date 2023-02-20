@@ -6,7 +6,7 @@ import { validateLoanForm } from "../helpers";
 
 const initialData = {
   fatherName: "Philip",
-  dob: "1998-02-10",
+  dob: "2025-03-05",
   pan: "EPDPY2884H",
   aadhar: "661866302206",
   courseName: "M.Tech",
@@ -69,6 +69,7 @@ const LoanPage = () => {
                     onChange={inputChange}
                     className="form-control form-control-md"
                     placeholder="Father name"
+                    required
                   />
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
@@ -80,6 +81,7 @@ const LoanPage = () => {
                     placeholder="Date of birth"
                     onFocus={(e) => (e.target.type = "date")}
                     onBlur={(e) => (e.target.type = "text")}
+                    required
                   />
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
@@ -90,6 +92,7 @@ const LoanPage = () => {
                     onChange={inputChange}
                     className="form-control form-control-md"
                     placeholder="PAN number"
+                    required
                   />
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
@@ -100,6 +103,7 @@ const LoanPage = () => {
                     onChange={inputChange}
                     className="form-control form-control-md"
                     placeholder="Aadhar number"
+                    required
                   />
                 </div>
               </div>
@@ -114,6 +118,7 @@ const LoanPage = () => {
                     onChange={inputChange}
                     className="form-control form-control-md"
                     placeholder="Course name"
+                    required
                   />
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
@@ -124,6 +129,7 @@ const LoanPage = () => {
                     onChange={inputChange}
                     className="form-control form-control-md"
                     placeholder="Institution name"
+                    required
                   />
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
@@ -135,6 +141,7 @@ const LoanPage = () => {
                     placeholder="Commencement date"
                     onFocus={(e) => (e.target.type = "date")}
                     onBlur={(e) => (e.target.type = "text")}
+                    required
                   />
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
@@ -146,6 +153,7 @@ const LoanPage = () => {
                     placeholder="Completion date"
                     onFocus={(e) => (e.target.type = "date")}
                     onBlur={(e) => (e.target.type = "text")}
+                    required
                   />
                 </div>
               </div>
@@ -160,6 +168,7 @@ const LoanPage = () => {
                     onChange={inputChange}
                     className="form-control form-control-md"
                     placeholder="Guarantor name"
+                    required
                   />
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
@@ -170,6 +179,7 @@ const LoanPage = () => {
                     onChange={inputChange}
                     className="form-control form-control-md"
                     placeholder="Guarantor mobile"
+                    required
                   />
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
@@ -180,6 +190,7 @@ const LoanPage = () => {
                     onChange={inputChange}
                     className="form-control form-control-md"
                     placeholder="Guarantor PAN"
+                    required
                   />
                 </div>
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
@@ -190,6 +201,7 @@ const LoanPage = () => {
                     onChange={inputChange}
                     className="form-control form-control-md"
                     placeholder="Guarantor income"
+                    required
                   />
                 </div>
               </div>

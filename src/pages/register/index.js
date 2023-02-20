@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "../../Images/edloan.png";
+// import Image5 from "../../Images/background.png";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { CustomAlert } from "../../components";
@@ -49,6 +50,7 @@ function Register() {
 
   return (
     <section className="bg-secondary pt-5">
+      {/* <img src={Image5} className="min-vh-100 bg-image" alt="backgroundimg" /> */}
       <div className="container card my-5 shadow">
         <div className="row g-0">
           <div className="col-xl-6 d-none d-xl-block">

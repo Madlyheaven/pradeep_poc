@@ -2,3 +2,24 @@
   height: 100vh;
   width: 100%;
 }
+.homeImage {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.homeContainer {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.75) 40%,
+      rgba(255, 255, 255, 0.25)
+    ),
+    url("Images/homepic1.png");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
